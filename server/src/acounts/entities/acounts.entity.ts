@@ -50,12 +50,8 @@ export class AcountsEntity extends inheritanceEntity {
   password: string;
   @Column({ nullable: false })
   hash: string;
-  @Column({
-    type: 'enum',
-    enum: ROLES_ENUM,
-    default: ROLES_ENUM.VIEW,
-  })
-  isAdmin: ROLES_ENUM;
+  @Column({ default: false })
+  isAdmin: boolean;
   @Column({ nullable: true })
   avatar: string;
   @Column({ nullable: true })

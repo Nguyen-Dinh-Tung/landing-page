@@ -1,5 +1,6 @@
 export enum ROLES_ENUM {
-  ADMIN = 'ADM',
-  VIEW = 'VIW',
-  SALE = 'SAE',
+  READ = 'read',
+  UPDATE = 'update',
+  CREATE = 'create',
+  DELETE = 'delete',
 }
