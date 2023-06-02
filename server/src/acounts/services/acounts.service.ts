@@ -12,7 +12,6 @@ import { Meta } from 'src/core/query/meta.dto';
 import { AppRes } from 'src/core/res/res';
 import {
   messageDeleteEntities,
-  messageDeletedEntities,
   messageGetDetailEntities,
   messageInsertEntities,
   messageNotFoundEntities,
@@ -25,11 +24,9 @@ import { CACHE_MANAGER } from '@nestjs/cache-manager';
 import { EXIST_ERR } from 'src/core/errors/errors';
 import { transformImage } from 'src/core/transform/transform-image';
 import { ENITIES_ENUM } from 'src/core/enums/entities.enum';
-import { Transactional } from 'typeorm-transactional';
 import { DeleteParamDto } from '../../core/dto/delete-param.dto';
 import * as fs from 'fs';
 import { UpdateAcountDto } from '../dto/update-acount.dto';
-import { UUID } from 'crypto';
 import { FieldUnique } from 'src/core/dto/field-unique.dto';
 @Injectable()
 export class AcountsService {
@@ -92,7 +89,6 @@ export class AcountsService {
       JSON.parse(await this.cacheManager.get(process.env.CACHE_MANAGER)),
     );
   }
-  @Transactional()
   async createAcount(
     res: Response,
     data: CreateAcountDto,
@@ -117,6 +113,7 @@ export class AcountsService {
     delete data.avt;
     const newAcount = this.acountRepo.create(data);
     newAcount.create_by = acount;
+    newAcount.create_at = new Date();
     if (newAcount) await this.acountRepo.insert(newAcount);
     return AppRes(
       messageInsertEntities(ENITIES_ENUM.ACOUNT),
@@ -125,7 +122,6 @@ export class AcountsService {
       newAcount,
     );
   }
-  @Transactional()
   async delete(param: DeleteParamDto, res: Response) {
     const checkAcount = await this.acountRepo.findOne({
       where: {
@@ -140,6 +136,7 @@ export class AcountsService {
         res,
       );
     checkAcount.isDelete = true;
+    checkAcount.delete_at = new Date();
     await this.acountRepo.save(checkAcount);
     return AppRes(
       messageDeleteEntities(ENITIES_ENUM.ACOUNT),
@@ -147,7 +144,6 @@ export class AcountsService {
       res,
     );
   }
-  @Transactional()
   async update(
     param: DeleteParamDto,
     data: UpdateAcountDto,
@@ -179,9 +175,10 @@ export class AcountsService {
           fs.unlinkSync(files['avt'][0].path);
         }
       : '';
-    delete data.avt;
-    delete data.bg;
-    await this.acountRepo.update({ id: checkAcount.id }, data);
+    data.avt ? delete data.avt : '';
+    data.bg ? delete data.bg : '';
+    checkAcount.update_at = new Date();
+    await this.acountRepo.save({ ...checkAcount, data });
     return AppRes(
       messageUpdateEntities(ENITIES_ENUM.ACOUNT),
       HttpStatus.OK,

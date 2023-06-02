@@ -6,8 +6,10 @@ import {
   IsOptional,
   IsString,
   IsStrongPassword,
+  Matches,
   Min,
 } from 'class-validator';
+import { regexPhoneNumber } from 'src/common/regex/phone-number.regex';
 import { CountryCodesEnum } from 'src/core/enums/country-codes.enum';
 import { IsVietnamPhoneNumber } from 'src/core/validate/phone-number.custom-validator';
 
@@ -22,7 +24,7 @@ export class CreateAcountDto {
   email: string;
   @IsNotEmpty()
   @ApiProperty({ example: '0098989898' })
-  @IsVietnamPhoneNumber()
+  @Matches(regexPhoneNumber)
   phone: string;
   @IsNotEmpty()
   @ApiProperty({ example: 'Tungphich@12' })

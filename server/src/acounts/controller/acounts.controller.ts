@@ -11,7 +11,6 @@ import {
   Delete,
   Param,
   Patch,
-  Req,
 } from '@nestjs/common';
 import { AcountsService } from '../services/acounts.service';
 import { Response } from 'express';
@@ -24,7 +23,7 @@ import {
   ApiConsumes,
 } from '@nestjs/swagger';
 import { CreateAcountDto } from '../dto/create-acount.dto';
-import { User } from 'src/core/decorator/user.decorator';
+import { Acount } from 'src/core/decorator/user.decorator';
 import * as _ from 'lodash';
 import { AcountsEntity } from '../entities/acounts.entity';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
@@ -71,7 +70,7 @@ export class AcountsController {
   async createAcount(
     @Res() res: Response,
     @Body() data: CreateAcountDto,
-    @User() acount?: AcountsEntity,
+    @Acount() acount?: AcountsEntity,
     @UploadedFiles() files?: Array<Express.Multer.File>,
   ) {
     return await this.acountsService.createAcount(res, data, acount, files);
