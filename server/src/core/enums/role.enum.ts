@@ -1,4 +1,4 @@
-export enum ROLES_ENUM {
+export enum ACTION_ENUM {
   READ = 'read',
   UPDATE = 'update',
   CREATE = 'create',

@@ -7,7 +7,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { ROLES_ENUM } from '../enums/role.enum';
+import { ACTION_ENUM } from '../enums/role.enum';
 import { ENITIES_ENUM } from '../enums/entities.enum';
 
 @Entity('roles')
@@ -17,8 +17,8 @@ export class RolesEntity extends BaseEntity {
   @ManyToOne(() => AcountsEntity, (acount) => acount.id)
   @JoinColumn()
   acount: AcountsEntity;
-  @Column({ enum: ROLES_ENUM, type: 'enum', nullable: false })
-  feature: ROLES_ENUM;
+  @Column({ enum: ACTION_ENUM, type: 'enum', nullable: false })
+  feature: ACTION_ENUM;
   @Column({ type: 'enum', enum: ENITIES_ENUM, nullable: false })
   entity: ENITIES_ENUM;
 }

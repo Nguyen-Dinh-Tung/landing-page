@@ -7,7 +7,6 @@ import {
   Entity,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { ROLES_ENUM } from 'src/core/enums/role.enum';
 import * as brcynt from 'bcrypt';
 @Entity('acounts')
 export class AcountsEntity extends inheritanceEntity {
