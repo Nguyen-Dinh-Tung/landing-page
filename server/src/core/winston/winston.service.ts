@@ -1,12 +1,8 @@
 import { Injectable, LoggerService } from '@nestjs/common';
 import * as winston from 'winston';
 import {
+  createTransportWinston,
   transportConsoleConfig,
-  transportDailyFileDebugConfig,
-  transportDailyFileErrorConfig,
-  transportDailyFileFUllApiConfig,
-  transportDailyFileInfoConfig,
-  transportDailyFileWarnConfig,
   transportHttpConfig,
   transportMaxSize,
   transportsCommon,
@@ -23,11 +19,14 @@ const logFormatDefault = winston.format.combine(
     space: 2,
   }),
 );
-
-const levels = { ...winston.config.syslog.levels, request: 1.5 };
-
-// Configuring 'request' color
-
+const levels = { ...winston.config.syslog.levels, request: 0.1 };
+const levelsWinston = {
+  error: 'error',
+  info: 'info',
+  debug: 'debug',
+  request: 'request',
+  warn: 'warn',
+};
 @Injectable()
 export class WinstonService implements LoggerService {
   private winston;
@@ -38,11 +37,11 @@ export class WinstonService implements LoggerService {
       format: logFormatDefault,
       defaultMeta: { service: this.contextName },
       transports: [
-        transportDailyFileInfoConfig,
-        transportDailyFileErrorConfig,
-        transportDailyFileDebugConfig,
-        transportDailyFileWarnConfig,
-        transportDailyFileFUllApiConfig,
+        createTransportWinston(levelsWinston.error),
+        createTransportWinston(levelsWinston.info),
+        createTransportWinston(levelsWinston.debug),
+        createTransportWinston(levelsWinston.request),
+        createTransportWinston(levelsWinston.warn),
         transportHttpConfig,
         transportMaxSize,
         transportConsoleConfig,

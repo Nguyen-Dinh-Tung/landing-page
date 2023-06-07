@@ -3,9 +3,10 @@ import { AppModule } from './app.module';
 import { initializeTransactionalContext } from 'typeorm-transactional';
 import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerModule } from '@nestjs/swagger/dist';
-import { ValidationPipe, LoggerService } from '@nestjs/common';
+import { ValidationPipe } from '@nestjs/common';
 import * as morgan from 'morgan';
 import { WinstonService } from './core/winston/winston.service';
+import { RequestInterceptor } from './core/winston/interceptor/request.interceptor';
 
 async function bootstrap() {
   initializeTransactionalContext();
@@ -21,9 +22,8 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
   app.useLogger(app.get(WinstonService));
-  const winstonSercice = app.get(WinstonService);
+  app.useGlobalInterceptors(new RequestInterceptor(app.get(WinstonService)));
   morgan.token('body', function (req) {
-    winstonSercice.apiLog(req);
     if (!req['originalUrl'].includes('/login')) {
       return JSON.stringify({
         body: req['body'],

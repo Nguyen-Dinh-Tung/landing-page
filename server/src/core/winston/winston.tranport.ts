@@ -25,62 +25,19 @@ export const logFormatConsole = winston.format.combine(
     return `[${info.level}] - ${info.timestamp} | ${JSON.stringify(info)}`;
   }),
 );
-
-export const transportDailyFileInfoConfig = new DailyRotateFile({
-  level: 'info',
-  filename: `logs/%DATE%/combined.log`,
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json(),
-  ),
-  datePattern: 'YYYY-MM-DD',
-  zippedArchive: false,
-  maxFiles: '30d',
-});
-export const transportDailyFileFUllApiConfig = new DailyRotateFile({
-  level: 'request',
-  filename: `logs/%DATE%/full-api.log`,
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json(),
-  ),
-  datePattern: 'YYYY-MM-DD',
-  zippedArchive: false,
-  maxFiles: '30d',
-});
-export const transportDailyFileErrorConfig = new DailyRotateFile({
-  level: 'error',
-  filename: `logs/%DATE%/error.log`,
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json(),
-  ),
-  datePattern: 'YYYY-MM-DD',
-  zippedArchive: false,
-  maxFiles: '30d',
-});
-export const transportDailyFileDebugConfig = new DailyRotateFile({
-  level: 'debug',
-  filename: `logs/%DATE%/debug.log`,
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json(),
-  ),
-  datePattern: 'YYYY-MM-DD',
-  zippedArchive: false,
-  maxFiles: '30d',
-});
-export const transportDailyFileWarnConfig = new DailyRotateFile({
-  level: 'warn',
-  filename: `logs/%DATE%/warn.log`,
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json(),
-  ),
-  datePattern: 'YYYY-MM-DD',
-  zippedArchive: false,
-  maxFiles: '30d',
-});
+export const createTransportWinston = (level: string) => {
+  return new DailyRotateFile({
+    level: level,
+    filename: `logs/%DATE%/${level}.log`,
+    format: winston.format.combine(
+      winston.format.timestamp(),
+      winston.format.json(),
+    ),
+    datePattern: 'YYYY-MM-DD',
+    zippedArchive: false,
+    maxFiles: '30d',
+  });
+};
 export const transportHttpConfig = new winston.transports.Http({
   level: 'http',
   host: 'locahost',
@@ -99,7 +56,7 @@ export const transportConsoleConfig = new winston.transports.Console({
     winston.format.colorize(),
     winston.format.timestamp(),
     winston.format.printf((info) => {
-      return `${info.timestamp} ${info.level}: ${info.message}`;
+      return `${info.timestamp} ${info.level}: ${info.key}: ${info.message}`;
     }),
   ),
 });
