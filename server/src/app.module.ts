@@ -8,12 +8,11 @@ import { AcountsModule } from './acounts/acounts.module';
 import { MulterModule } from '@nestjs/platform-express/multer';
 import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
-import { APP_GUARD } from '@nestjs/core';
+import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
-import { MiddlewareConsumer } from '@nestjs/common';
-import { RequestLoggerMiddleware } from './core/loger-request/request-logger';
 import { WinstonModule } from './core/winston/winston.module';
 import { WinstonService } from './core/winston/winston.service';
+import { RequestInterceptor } from './core/winston/interceptor/request.interceptor';
 
 @Module({
   imports: [
@@ -45,9 +44,4 @@ import { WinstonService } from './core/winston/winston.service';
   ],
   exports: [],
 })
-export class AppModule {
-  constructor(private readonly winstonService: WinstonService) {}
-  configure(consumer: MiddlewareConsumer): void {
-    // consumer.apply(RequestLoggerMiddleware).forRoutes('*');
-  }
-}
+export class AppModule {}
