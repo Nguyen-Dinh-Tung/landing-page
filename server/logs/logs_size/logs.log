@@ -38887,3 +38887,2181 @@
   "statusMessage": null,
   "timestamp": "07-06-2023 07:50:40"
 }
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:52:44"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:53:40"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:16"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 07:59:56"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:00:50"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:01:00"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:02:14"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:02:34"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:03:41"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "ip": "::1",
+  "isApiLog": true,
+  "label": "APP_NAME",
+  "level": "request",
+  "message": "GET",
+  "originalUrl": "/api/acounts?",
+  "statusCode": null,
+  "statusMessage": null,
+  "timestamp": "07-06-2023 08:06:39"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "ip": "::1",
+  "isApiLog": true,
+  "label": "APP_NAME",
+  "level": "request",
+  "message": "GET",
+  "originalUrl": "/api/acounts?",
+  "statusCode": null,
+  "statusMessage": null,
+  "timestamp": "07-06-2023 08:07:42"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:08:49"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AppController {/api}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AcountsController {/api/acounts}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, GET} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts, POST} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, DELETE} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/acounts/:id, PATCH} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RoutesResolver",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "AuthController {/api/auth}:",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "RouterExplorer",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Mapped {/api/auth/login, POST} route",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:09:48"
+}
+{
+  "key": "NestApplication",
+  "label": "APP_NAME",
+  "level": "info",
+  "message": "Nest application successfully started",
+  "timestamp": "07-06-2023 08:09:48"
+}

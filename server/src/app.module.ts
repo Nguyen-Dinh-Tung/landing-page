@@ -12,7 +12,7 @@ import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
 import { WinstonModule } from './core/winston/winston.module';
 import { WinstonService } from './core/winston/winston.service';
-
+import { MorganModule } from './core/morgan/morgan.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -31,6 +31,7 @@ import { WinstonService } from './core/winston/winston.service';
     AcountsModule,
     AuthModule,
     WinstonModule,
+    MorganModule,
   ],
   controllers: [AppController],
   providers: [
