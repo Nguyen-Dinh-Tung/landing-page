@@ -5,6 +5,7 @@ import { AcountsService } from './services/acounts.service';
 import { AcountsController } from './controller/acounts.controller';
 import { CacheModule } from '@nestjs/cache-manager';
 import { MulterModule } from '@nestjs/platform-express';
+import { WinstonModule } from 'src/core/winston/winston.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { MulterModule } from '@nestjs/platform-express';
     MulterModule.register({
       dest: './data/images',
     }),
+    WinstonModule,
   ],
   controllers: [AcountsController],
   providers: [AcountsService],

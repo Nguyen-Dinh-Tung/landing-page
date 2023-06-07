@@ -5,14 +5,8 @@ import {
   IsNotEmpty,
   IsOptional,
   IsString,
-  IsStrongPassword,
-  Matches,
-  Min,
 } from 'class-validator';
-import { regexPhoneNumber } from 'src/common/regex/phone-number.regex';
 import { CountryCodesEnum } from 'src/core/enums/country-codes.enum';
-import { IsVietnamPhoneNumber } from 'src/core/validate/phone-number.custom-validator';
-
 export class CreateAcountDto {
   @IsNotEmpty()
   @ApiProperty({ example: 'Nguyen van a' })
@@ -24,17 +18,13 @@ export class CreateAcountDto {
   email: string;
   @IsNotEmpty()
   @ApiProperty({ example: '0098989898' })
-  @Matches(regexPhoneNumber)
   phone: string;
   @IsNotEmpty()
   @ApiProperty({ example: 'Tungphich@12' })
   password: string;
   @IsNotEmpty()
   @IsEnum(CountryCodesEnum)
-  @ApiProperty({
-    enum: CountryCodesEnum,
-    default: CountryCodesEnum.Vietnam,
-  })
+  @ApiProperty({})
   country: CountryCodesEnum;
   @ApiPropertyOptional({ description: 'facebook name' })
   @IsOptional()

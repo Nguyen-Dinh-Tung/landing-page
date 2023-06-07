@@ -95,6 +95,7 @@ export class AcountsService {
     acount?: AcountsEntity,
     files?: Array<Express.Multer.File>,
   ) {
+    console.log(data, 'data');
     const checkAcount = await this.acountRepo.findOne({
       where: [
         { username: data.username },
@@ -102,11 +103,11 @@ export class AcountsService {
         { phone: data.phone },
       ],
     });
-    if (checkAcount) {
-      files && files['bg'] ? fs.unlinkSync(files['bg'][0].path) : '';
-      files && files['avt'] ? fs.unlinkSync(files['avt'][0].path) : '';
-      throw new BadRequestException(EXIST_ERR(ENITIES_ENUM.ACOUNT));
-    }
+    // if (checkAcount) {
+    //   files && files['bg'] ? fs.unlinkSync(files['bg'][0].path) : '';
+    //   files && files['avt'] ? fs.unlinkSync(files['avt'][0].path) : '';
+    //   throw new BadRequestException(EXIST_ERR(ENITIES_ENUM.ACOUNT));
+    // }
     data.background = transformImage(files['bg']);
     data.avatar = transformImage(files['avt']);
     delete data.bg;

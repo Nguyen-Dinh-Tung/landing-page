@@ -3,10 +3,13 @@ import { AppModule } from './app.module';
 import { initializeTransactionalContext } from 'typeorm-transactional';
 import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerModule } from '@nestjs/swagger/dist';
-import { ValidationPipe } from '@nestjs/common';
+import { ValidationPipe, LoggerService } from '@nestjs/common';
+import * as morgan from 'morgan';
+import { WinstonService } from './core/winston/winston.service';
+
 async function bootstrap() {
   initializeTransactionalContext();
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, {});
   app.init();
   app.enableCors();
   app.setGlobalPrefix('api');
@@ -17,6 +20,24 @@ async function bootstrap() {
     .setDescription('The landing page api')
     .setVersion('1.0')
     .build();
+  app.useLogger(app.get(WinstonService));
+  const winstonSercice = app.get(WinstonService);
+  morgan.token('body', function (req) {
+    winstonSercice.apiLog(req);
+    if (!req['originalUrl'].includes('/login')) {
+      return JSON.stringify({
+        body: req['body'],
+        query: req['query'],
+      });
+    }
+    return '{}';
+  });
+  app.use(
+    morgan(
+      ':remote-addr :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" data::body :response-time ms',
+    ),
+  );
+
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('open', app, document);
   await app.listen(process.env.SERVER_PORT, () => {

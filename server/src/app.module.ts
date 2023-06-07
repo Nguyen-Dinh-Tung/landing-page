@@ -10,6 +10,11 @@ import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
+import { MiddlewareConsumer } from '@nestjs/common';
+import { RequestLoggerMiddleware } from './core/loger-request/request-logger';
+import { WinstonModule } from './core/winston/winston.module';
+import { WinstonService } from './core/winston/winston.service';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -27,6 +32,7 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
     DatabaseModule,
     AcountsModule,
     AuthModule,
+    WinstonModule,
   ],
   controllers: [AppController],
   providers: [
@@ -35,7 +41,13 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
       provide: APP_GUARD,
       useClass: JwtAuthGuard,
     },
+    WinstonService,
   ],
   exports: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private readonly winstonService: WinstonService) {}
+  configure(consumer: MiddlewareConsumer): void {
+    // consumer.apply(RequestLoggerMiddleware).forRoutes('*');
+  }
+}
