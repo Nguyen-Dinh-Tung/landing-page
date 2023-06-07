@@ -33,7 +33,18 @@ export const transportDailyFileInfoConfig = new DailyRotateFile({
     winston.format.timestamp(),
     winston.format.json(),
   ),
-  datePattern: 'YYYY-MM-DD-HH',
+  datePattern: 'YYYY-MM-DD',
+  zippedArchive: false,
+  maxFiles: '30d',
+});
+export const transportDailyFileFUllApiConfig = new DailyRotateFile({
+  level: 'request',
+  filename: `logs/%DATE%/full-api.log`,
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json(),
+  ),
+  datePattern: 'YYYY-MM-DD',
   zippedArchive: false,
   maxFiles: '30d',
 });
@@ -44,7 +55,7 @@ export const transportDailyFileErrorConfig = new DailyRotateFile({
     winston.format.timestamp(),
     winston.format.json(),
   ),
-  datePattern: 'YYYY-MM-DD-HH',
+  datePattern: 'YYYY-MM-DD',
   zippedArchive: false,
   maxFiles: '30d',
 });
@@ -55,7 +66,7 @@ export const transportDailyFileDebugConfig = new DailyRotateFile({
     winston.format.timestamp(),
     winston.format.json(),
   ),
-  datePattern: 'YYYY-MM-DD-HH',
+  datePattern: 'YYYY-MM-DD',
   zippedArchive: false,
   maxFiles: '30d',
 });
@@ -66,7 +77,7 @@ export const transportDailyFileWarnConfig = new DailyRotateFile({
     winston.format.timestamp(),
     winston.format.json(),
   ),
-  datePattern: 'YYYY-MM-DD-HH',
+  datePattern: 'YYYY-MM-DD',
   zippedArchive: false,
   maxFiles: '30d',
 });

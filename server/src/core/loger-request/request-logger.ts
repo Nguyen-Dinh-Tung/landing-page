@@ -1,14 +1,13 @@
 import { Injectable, Logger, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
+import { WinstonService } from '../winston/winston.service';
 
 @Injectable()
 export class RequestLoggerMiddleware implements NestMiddleware {
-  private readonly logger = new Logger();
+  constructor(private readonly winstonService: WinstonService) {}
   use(req: Request, res: Response, next: NextFunction) {
-    res.on('finish', () => {
-      const statusCode = res.statusCode;
-      if (statusCode !== 200)
-        this.logger.error(`[${req.method}] ${req.url} - ${statusCode}`);
+    req.on('close', () => {
+      this.winstonService.apiLog(req);
     });
     next();
   }

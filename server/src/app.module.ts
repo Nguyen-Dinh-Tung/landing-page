@@ -13,6 +13,7 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
 import { MiddlewareConsumer } from '@nestjs/common';
 import { RequestLoggerMiddleware } from './core/loger-request/request-logger';
 import { WinstonModule } from './core/winston/winston.module';
+import { WinstonService } from './core/winston/winston.service';
 
 @Module({
   imports: [
@@ -40,7 +41,13 @@ import { WinstonModule } from './core/winston/winston.module';
       provide: APP_GUARD,
       useClass: JwtAuthGuard,
     },
+    WinstonService,
   ],
   exports: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private readonly winstonService: WinstonService) {}
+  configure(consumer: MiddlewareConsumer): void {
+    // consumer.apply(RequestLoggerMiddleware).forRoutes('*');
+  }
+}

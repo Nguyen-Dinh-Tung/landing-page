@@ -4,6 +4,7 @@ import {
   transportConsoleConfig,
   transportDailyFileDebugConfig,
   transportDailyFileErrorConfig,
+  transportDailyFileFUllApiConfig,
   transportDailyFileInfoConfig,
   transportDailyFileWarnConfig,
   transportHttpConfig,
@@ -22,13 +23,18 @@ const logFormatDefault = winston.format.combine(
     space: 2,
   }),
 );
+
+const levels = { ...winston.config.syslog.levels, request: 1.5 };
+
+// Configuring 'request' color
+
 @Injectable()
 export class WinstonService implements LoggerService {
   private winston;
   private contextName;
-
   constructor() {
     this.winston = winston.createLogger({
+      levels: levels,
       format: logFormatDefault,
       defaultMeta: { service: this.contextName },
       transports: [
@@ -36,10 +42,15 @@ export class WinstonService implements LoggerService {
         transportDailyFileErrorConfig,
         transportDailyFileDebugConfig,
         transportDailyFileWarnConfig,
+        transportDailyFileFUllApiConfig,
         transportHttpConfig,
         transportMaxSize,
         transportConsoleConfig,
       ],
+    });
+    winston.addColors({
+      ...winston.config.syslog.colors,
+      request: winston.config.syslog.colors.info,
     });
   }
   setContextName(contextName) {
@@ -47,8 +58,8 @@ export class WinstonService implements LoggerService {
   }
   apiLog(input) {
     this.winston.log({
-      isApi: true,
-      level: 'info',
+      isApiLog: true,
+      level: 'request',
       statusCode: input.statusCode,
       message: input.method,
       originalUrl: input.originalUrl,
@@ -56,6 +67,7 @@ export class WinstonService implements LoggerService {
       ip: input.ip,
     });
   }
+
   error(message: any, key: string) {
     this.winston.log({
       level: 'error',

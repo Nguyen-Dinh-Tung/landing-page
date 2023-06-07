@@ -8,6 +8,7 @@ import { PassportModule } from '@nestjs/passport';
 import { LocalStrategy } from 'src/core/jwt/local-strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtStrategy } from 'src/core/jwt/jwt.strategy';
+import { WinstonModule } from 'src/core/winston/winston.module';
 @Module({
   imports: [
     PassportModule.register({ defaultStrategy: 'jwt' }),
@@ -24,6 +25,7 @@ import { JwtStrategy } from 'src/core/jwt/jwt.strategy';
       inject: [ConfigService],
     }),
     CacheModule.register({}),
+    WinstonModule,
   ],
   controllers: [AuthController],
   providers: [AuthService, AcountsService, LocalStrategy, JwtStrategy],
