@@ -36,6 +36,7 @@ export const createTransportWinston = (level: string) => {
     datePattern: 'YYYY-MM-DD',
     zippedArchive: false,
     maxFiles: '30d',
+    maxSize: '5m',
   });
 };
 export const transportHttpConfig = new winston.transports.Http({
@@ -49,14 +50,14 @@ export const transportMaxSize = new winston.transports.File({
   silent: false,
   filename: 'logs/logs_size/logs.log',
 });
-export const transportConsoleConfig = new winston.transports.Console({
-  format: winston.format.combine(
-    winston.format.cli(),
-    winston.format.splat(),
-    winston.format.colorize(),
-    winston.format.timestamp(),
-    winston.format.printf((info) => {
-      return `${info.timestamp} ${info.level}: ${info.key}: ${info.message}`;
-    }),
-  ),
-});
+// export const transportConsoleConfig = new winston.transports.Console({
+//   format: winston.format.combine(
+//     winston.format.cli(),
+//     winston.format.splat(),
+//     winston.format.colorize(),
+//     winston.format.timestamp(),
+//     winston.format.printf((info) => {
+//       return `${info.timestamp} ${info.level}: ${info.key}: ${info.message}`;
+//     }),
+//   ),
+// });
