@@ -7,7 +7,6 @@ import { ValidationPipe } from '@nestjs/common';
 import * as morgan from 'morgan';
 import { WinstonService } from './core/winston/winston.service';
 import { RequestInterceptor } from './core/winston/interceptor/request.interceptor';
-
 async function bootstrap() {
   initializeTransactionalContext();
   const app = await NestFactory.create(AppModule, {});
@@ -32,11 +31,6 @@ async function bootstrap() {
     }
     return '{}';
   });
-  app.use(
-    morgan(
-      ':remote-addr :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" data::body :response-time ms',
-    ),
-  );
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('open', app, document);

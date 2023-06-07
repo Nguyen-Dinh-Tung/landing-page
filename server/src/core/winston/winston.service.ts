@@ -2,7 +2,7 @@ import { Injectable, LoggerService } from '@nestjs/common';
 import * as winston from 'winston';
 import {
   createTransportWinston,
-  transportConsoleConfig,
+  // transportConsoleConfig,
   transportHttpConfig,
   transportMaxSize,
   transportsCommon,
@@ -38,17 +38,12 @@ export class WinstonService implements LoggerService {
       defaultMeta: { service: this.contextName },
       transports: [
         createTransportWinston(levelsWinston.error),
-        createTransportWinston(levelsWinston.info),
-        createTransportWinston(levelsWinston.debug),
         createTransportWinston(levelsWinston.request),
-        createTransportWinston(levelsWinston.warn),
         transportHttpConfig,
         transportMaxSize,
-        transportConsoleConfig,
       ],
     });
     winston.addColors({
-      ...winston.config.syslog.colors,
       request: winston.config.syslog.colors.info,
     });
   }
