@@ -1,9 +1,9 @@
-import { MorganInterceptor, MorganModule as morgan } from 'nest-morgan';
-import { Module } from '@nestjs/common';
+import { MorganInterceptor, MorganModule as Morgan } from 'nest-morgan';
+import { Module, MiddlewareConsumer } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import * as chalk from 'chalk';
 @Module({
-  imports: [morgan],
+  imports: [Morgan],
   providers: [
     {
       provide: APP_INTERCEPTOR,
