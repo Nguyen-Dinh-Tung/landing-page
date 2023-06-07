@@ -3,5 +3,5 @@ import { ACTION_ENUM } from '../enums/role.enum';
 
 export interface RolesInterface {
   action: ACTION_ENUM;
-  feature: ENITIES_ENUM;
+  entity: ENITIES_ENUM;
 }

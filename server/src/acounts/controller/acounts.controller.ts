@@ -1,3 +1,4 @@
+import { ENITIES_ENUM } from './../../core/enums/entities.enum';
 import {
   Controller,
   Res,
@@ -30,6 +31,8 @@ import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { DeleteParamDto } from '../../core/dto/delete-param.dto';
 import { UpdateAcountDto } from '../dto/update-acount.dto';
 import { Public } from 'src/core/decorator/public.decorator';
+import { AppRoles } from 'src/core/guards/roles.guard';
+import { ACTION_ENUM } from 'src/core/enums/role.enum';
 @ApiTags('acounts')
 @ApiBearerAuth()
 @Controller('acounts')
@@ -59,7 +62,10 @@ export class AcountsController {
   }
   @ApiOperation({ summary: 'Create new Acount' })
   @ApiConsumes('multipart/form-data')
-  @Public()
+  // @AppRoles({
+  //   entity: ENITIES_ENUM.ACOUNT,
+  //   action: ACTION_ENUM.CREATE,
+  // })
   @Post()
   @UseInterceptors(
     FileFieldsInterceptor([

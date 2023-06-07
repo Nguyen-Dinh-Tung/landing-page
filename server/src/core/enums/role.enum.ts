@@ -3,4 +3,5 @@ export enum ACTION_ENUM {
   UPDATE = 'update',
   CREATE = 'create',
   DELETE = 'delete',
+  PUBLIC = 'public',
 }

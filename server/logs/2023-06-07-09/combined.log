@@ -1,0 +1,23 @@
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AppController {/api}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AcountsController {/api/acounts}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts, POST} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, DELETE} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, PATCH} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AuthController {/api/auth}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AppController {/api}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AcountsController {/api/acounts}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, GET} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts, POST} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, DELETE} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/acounts/:id, PATCH} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"RoutesResolver","label":"APP_NAME","level":"info","message":"AuthController {/api/auth}:","timestamp":"07-06-2023 09:24:10"}
+{"key":"RouterExplorer","label":"APP_NAME","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"07-06-2023 09:24:10"}
+{"key":"NestApplication","label":"APP_NAME","level":"info","message":"Nest application successfully started","timestamp":"07-06-2023 09:24:10"}
+{"key":"NestApplication","label":"APP_NAME","level":"info","message":"Nest application successfully started","timestamp":"07-06-2023 09:24:10"}
+{"key":"QueryFailedError: Duplicate entry 'taman1@gmail.com' for key 'acounts.IDX_ce7d09779e1676a11fd6098093'\n    at Query.onResult (D:\\landing-page\\server\\src\\driver\\mysql\\MysqlQueryRunner.ts:222:33)\n    at Query.execute (D:\\landing-page\\server\\node_modules\\mysql2\\lib\\commands\\command.js:36:14)\n    at PoolConnection.handlePacket (D:\\landing-page\\server\\node_modules\\mysql2\\lib\\connection.js:489:32)\n    at PacketParser.onPacket (D:\\landing-page\\server\\node_modules\\mysql2\\lib\\connection.js:94:12)\n    at PacketParser.executeStart (D:\\landing-page\\server\\node_modules\\mysql2\\lib\\packet_parser.js:75:16)\n    at Socket.<anonymous> (D:\\landing-page\\server\\node_modules\\mysql2\\lib\\connection.js:101:25)\n    at Socket.emit (node:events:513:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)","label":"APP_NAME","level":"error","message":"Duplicate entry 'taman1@gmail.com' for key 'acounts.IDX_ce7d09779e1676a11fd6098093'","timestamp":"07-06-2023 09:24:10"}

@@ -10,6 +10,10 @@ import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
+import { MiddlewareConsumer } from '@nestjs/common';
+import { RequestLoggerMiddleware } from './core/loger-request/request-logger';
+import { WinstonModule } from './core/winston/winston.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -27,6 +31,7 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
     DatabaseModule,
     AcountsModule,
     AuthModule,
+    WinstonModule,
   ],
   controllers: [AppController],
   providers: [
