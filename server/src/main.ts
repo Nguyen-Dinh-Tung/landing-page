@@ -22,15 +22,6 @@ async function bootstrap() {
     .build();
   app.useLogger(app.get(WinstonService));
   app.useGlobalInterceptors(new RequestInterceptor(app.get(WinstonService)));
-  morgan.token('body', function (req) {
-    if (!req['originalUrl'].includes('/login')) {
-      return JSON.stringify({
-        body: req['body'],
-        query: req['query'],
-      });
-    }
-    return '{}';
-  });
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('open', app, document);
   await app.listen(process.env.SERVER_PORT, () => {
