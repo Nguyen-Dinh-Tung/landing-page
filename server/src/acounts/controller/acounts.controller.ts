@@ -42,6 +42,7 @@ export class AcountsController {
   @ApiOperation({ summary: 'Get list acounts' })
   @Get()
   async findAll(@Res() res: Response, @Query() queryDto: QueryDtoBase) {
+    throw new Error('fack');
     try {
       return await this.acountsService.findALl(res, queryDto);
     } catch (e) {

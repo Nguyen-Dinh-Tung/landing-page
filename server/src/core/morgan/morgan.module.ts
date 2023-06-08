@@ -1,7 +1,8 @@
 import { MorganInterceptor, MorganModule as Morgan } from 'nest-morgan';
-import { Module, MiddlewareConsumer } from '@nestjs/common';
+import { Module, OnModuleInit } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import * as chalk from 'chalk';
+import * as morganCore from 'morgan';
 @Module({
   imports: [Morgan],
   providers: [
@@ -17,4 +18,13 @@ import * as chalk from 'chalk';
     },
   ],
 })
-export class MorganModule {}
+export class MorganModule implements OnModuleInit {
+  onModuleInit() {
+    morganCore.token('body', function (reqs) {
+      if (!reqs['originalUrl'].includes('/sign-in')) {
+        return JSON.stringify(reqs['body']);
+      }
+      return '{}';
+    });
+  }
+}
