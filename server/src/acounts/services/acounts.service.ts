@@ -28,6 +28,7 @@ import { DeleteParamDto } from '../../core/dto/delete-param.dto';
 import * as fs from 'fs';
 import { UpdateAcountDto } from '../dto/update-acount.dto';
 import { FieldUnique } from 'src/core/dto/field-unique.dto';
+import { TelegramBotSerivce } from 'src/core/modules/telegram-bot/service/telegram-bot.service';
 @Injectable()
 export class AcountsService {
   private readonly acountRepo: Repository<AcountsEntity>;

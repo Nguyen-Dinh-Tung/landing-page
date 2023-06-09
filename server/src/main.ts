@@ -4,8 +4,7 @@ import { initializeTransactionalContext } from 'typeorm-transactional';
 import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerModule } from '@nestjs/swagger/dist';
 import { ValidationPipe } from '@nestjs/common';
-import * as morgan from 'morgan';
-import { WinstonService } from './core/winston/winston.service';
+
 async function bootstrap() {
   initializeTransactionalContext();
   const app = await NestFactory.create(AppModule, {});

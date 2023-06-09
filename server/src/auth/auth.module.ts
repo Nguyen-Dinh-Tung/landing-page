@@ -9,6 +9,7 @@ import { LocalStrategy } from 'src/core/jwt/local-strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtStrategy } from 'src/core/jwt/jwt.strategy';
 import { WinstonModule } from 'src/core/winston/winston.module';
+import { TelegramBotModule } from 'src/core/modules/telegram-bot/teletegram-bot.module';
 @Module({
   imports: [
     PassportModule.register({ defaultStrategy: 'jwt' }),
@@ -26,6 +27,7 @@ import { WinstonModule } from 'src/core/winston/winston.module';
     }),
     CacheModule.register({}),
     WinstonModule,
+    TelegramBotModule,
   ],
   controllers: [AuthController],
   providers: [AuthService, AcountsService, LocalStrategy, JwtStrategy],

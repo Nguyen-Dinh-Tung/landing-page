@@ -44,6 +44,7 @@
     "mysql2": "^3.3.1",
     "nest-morgan": "^2.0.0",
     "nest-winston": "^1.9.2",
+    "nestjs-telegram": "^1.2.0",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",

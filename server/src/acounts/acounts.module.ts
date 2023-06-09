@@ -6,6 +6,7 @@ import { AcountsController } from './controller/acounts.controller';
 import { CacheModule } from '@nestjs/cache-manager';
 import { MulterModule } from '@nestjs/platform-express';
 import { WinstonModule } from 'src/core/winston/winston.module';
+import { TelegramBotModule } from 'src/core/modules/telegram-bot/teletegram-bot.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { WinstonModule } from 'src/core/winston/winston.module';
       dest: './data/images',
     }),
     WinstonModule,
+    TelegramBotModule,
   ],
   controllers: [AcountsController],
   providers: [AcountsService],

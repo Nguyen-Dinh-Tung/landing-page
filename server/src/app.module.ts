@@ -1,5 +1,5 @@
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { ConfigModule } from '@nestjs/config';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Module, OnModuleInit } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -13,6 +13,8 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
 import { WinstonService } from './core/winston/winston.service';
 import { MorganModule } from './core/morgan/morgan.module';
 import { WinstonModule } from './core/winston/winston.module';
+import { TelegramModule } from 'nestjs-telegram';
+import { TelegramBotModule } from './core/modules/telegram-bot/teletegram-bot.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -31,7 +33,8 @@ import { WinstonModule } from './core/winston/winston.module';
     AcountsModule,
     AuthModule,
     MorganModule,
-    WinstonModule.registor('admin'),
+    WinstonModule.register('admin'),
+    TelegramBotModule,
   ],
   controllers: [AppController],
   providers: [
