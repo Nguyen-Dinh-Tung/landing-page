@@ -1,4 +1,4 @@
-import { Injectable, LoggerService } from '@nestjs/common';
+import { Inject, Injectable, LoggerService } from '@nestjs/common';
 import * as winston from 'winston';
 import {
   createTransportWinston,
@@ -32,14 +32,14 @@ const levelsWinston = {
 export class WinstonService implements LoggerService {
   private winston;
   private contextName;
+  public static fileName: string;
   constructor() {
     this.winston = winston.createLogger({
       levels: levels,
       format: logFormatDefault,
       defaultMeta: { service: this.contextName },
       transports: [
-        createTransportWinston(levelsWinston.error),
-        createTransportWinston(levelsWinston.request),
+        createTransportWinston(levelsWinston.error, WinstonService.fileName),
         transportHttpConfig,
         transportMaxSize,
         transportConsoleConfig,

@@ -6,7 +6,6 @@ import { SwaggerModule } from '@nestjs/swagger/dist';
 import { ValidationPipe } from '@nestjs/common';
 import * as morgan from 'morgan';
 import { WinstonService } from './core/winston/winston.service';
-import { RequestInterceptor } from './core/winston/interceptor/request.interceptor';
 async function bootstrap() {
   initializeTransactionalContext();
   const app = await NestFactory.create(AppModule, {});
@@ -20,8 +19,7 @@ async function bootstrap() {
     .setDescription('The landing page api')
     .setVersion('1.0')
     .build();
-  app.useLogger(app.get(WinstonService));
-  app.useGlobalInterceptors(new RequestInterceptor(app.get(WinstonService)));
+  // app.useGlobalInterceptors(new RequestInterceptor(app.get(WinstonService)));
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('open', app, document);
   await app.listen(process.env.SERVER_PORT, () => {
