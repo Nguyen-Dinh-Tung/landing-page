@@ -25,10 +25,10 @@ export const logFormatConsole = winston.format.combine(
     return `[${info.level}] - ${info.timestamp} | ${JSON.stringify(info)}`;
   }),
 );
-export const createTransportWinston = (level: string) => {
+export const createTransportWinston = (level: string, fileName: string) => {
   return new DailyRotateFile({
     level: level,
-    filename: `logs/%DATE%/${level}.log`,
+    filename: `logs/%DATE%/${fileName}.${level}.log`,
     format: winston.format.combine(
       winston.format.timestamp(),
       winston.format.json(),

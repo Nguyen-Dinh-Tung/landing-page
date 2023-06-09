@@ -1,9 +1,12 @@
-import { Module } from '@nestjs/common';
+import { DynamicModule, Module } from '@nestjs/common';
 import { WinstonService } from './winston.service';
-import { APP_INTERCEPTOR } from '@nestjs/core';
-import { RequestInterceptor } from './interceptor/request.interceptor';
-@Module({
-  imports: [],
-  providers: [WinstonService],
-})
-export class WinstonModule {}
+@Module({})
+export class WinstonModule {
+  static registor(fileName: string): DynamicModule {
+    WinstonService.fileName = fileName;
+    return {
+      module: WinstonModule,
+      providers: [WinstonService],
+    };
+  }
+}

@@ -1,6 +1,6 @@
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { ConfigModule } from '@nestjs/config';
-import { Module, MiddlewareConsumer } from '@nestjs/common';
+import { Module, OnModuleInit } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './core/databases/database.module';
@@ -10,9 +10,9 @@ import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
-import { WinstonModule } from './core/winston/winston.module';
 import { WinstonService } from './core/winston/winston.service';
 import { MorganModule } from './core/morgan/morgan.module';
+import { WinstonModule } from './core/winston/winston.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -30,8 +30,8 @@ import { MorganModule } from './core/morgan/morgan.module';
     DatabaseModule,
     AcountsModule,
     AuthModule,
-    WinstonModule,
     MorganModule,
+    WinstonModule.registor('admin'),
   ],
   controllers: [AppController],
   providers: [
