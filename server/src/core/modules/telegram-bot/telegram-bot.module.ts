@@ -1,10 +1,19 @@
-import { Module } from 'nestgram';
+import { Module } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { TelegramModule, TelegramService } from 'nestjs-telegram';
 import { TelegramBotController } from './serivces/controller/telegram-bot.controller';
 import { TelegramBotService } from './serivces/services/telegram-bot.service';
 
 @Module({
-  imports: [],
+  imports: [
+    TelegramModule.forRootAsync({
+      useFactory: (configService: ConfigService) => {
+        return { botKey: configService.get<string>('TELEGRAM_BOT_KEY') };
+      },
+      inject: [ConfigService],
+    }),
+  ],
   controllers: [TelegramBotController],
-  services: [TelegramBotService],
+  providers: [TelegramBotService],
 })
 export class TelegramBotModule {}

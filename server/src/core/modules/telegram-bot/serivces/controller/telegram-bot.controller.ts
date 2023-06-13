@@ -1,13 +1,13 @@
-import { OnCommand, Controller, CommandParams, Text } from 'nestgram';
+import { Body, Controller, Get, Post, Res } from '@nestjs/common';
+import { TelegramBotService } from '../services/telegram-bot.service';
+import { CreateMessageGroup } from '../../dto/create-message-group.dto';
+import { Response } from 'express';
 
-@Controller()
+@Controller('telegram-bot')
 export class TelegramBotController {
-  @OnCommand('start')
-  async startMessage() {
-    return 'hello';
-  }
-  @OnCommand('con_me_may')
-  async testCommand(@Text() text: string) {
-    return 'Chửi cc';
+  constructor(private readonly telegramBotService: TelegramBotService) {}
+  @Post()
+  async createMessage(@Body() data: CreateMessageGroup, @Res() res: Response) {
+    return await this.telegramBotService.createMessage(data.message, res);
   }
 }

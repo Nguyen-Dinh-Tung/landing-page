@@ -6,6 +6,7 @@ import { SwaggerModule } from '@nestjs/swagger/dist';
 import { ValidationPipe } from '@nestjs/common';
 import { NestGram } from 'nestgram';
 import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.module';
+import { TelegramBotCommandModule } from './core/modules/telegram-bot-command/telegram-bot-command.module';
 
 async function bootstrap() {
   initializeTransactionalContext();
@@ -30,7 +31,10 @@ async function bootstrap() {
 }
 bootstrap();
 async function botBootstrap() {
-  const bot = new NestGram(process.env.TELEGRAM_BOT_KEY, TelegramBotModule);
+  const bot = new NestGram(
+    process.env.TELEGRAM_BOT_KEY,
+    TelegramBotCommandModule,
+  );
   bot.start();
 }
 
