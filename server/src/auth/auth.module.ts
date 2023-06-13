@@ -28,9 +28,6 @@ import { TelegramModule, TelegramService } from 'nestjs-telegram';
     }),
     CacheModule.register({}),
     WinstonModule,
-    TelegramModule.forRoot({
-      botKey: 'AAEs5Yre9XdEazJBPRB3HxCQeCSyx0TVqGw',
-    }),
   ],
   controllers: [AuthController],
   providers: [AuthService, AcountsService, LocalStrategy, JwtStrategy],
