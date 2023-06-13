@@ -4,10 +4,13 @@ import { initializeTransactionalContext } from 'typeorm-transactional';
 import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerModule } from '@nestjs/swagger/dist';
 import { ValidationPipe } from '@nestjs/common';
+import { NestGram } from 'nestgram';
+import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.module';
 
 async function bootstrap() {
   initializeTransactionalContext();
   const app = await NestFactory.create(AppModule, {});
+
   app.init();
   app.enableCors();
   app.setGlobalPrefix('api');
@@ -26,3 +29,9 @@ async function bootstrap() {
   });
 }
 bootstrap();
+async function botBootstrap() {
+  const bot = new NestGram(process.env.TELEGRAM_BOT_KEY, TelegramBotModule);
+  bot.start();
+}
+
+botBootstrap();
