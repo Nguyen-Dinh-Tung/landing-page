@@ -13,8 +13,7 @@ import { JwtAuthGuard } from './core/guards/jwt-auth.guard';
 import { WinstonService } from './core/winston/winston.service';
 import { MorganModule } from './core/morgan/morgan.module';
 import { WinstonModule } from './core/winston/winston.module';
-import { TelegramModule } from 'nestjs-telegram';
-import { TelegramBotModule } from './core/modules/telegram-bot/teletegram-bot.module';
+import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.module';
 @Module({
   imports: [
     ConfigModule.forRoot({

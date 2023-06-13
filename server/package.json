@@ -32,6 +32,7 @@
     "@nestjs/swagger": "^6.3.0",
     "@nestjs/typeorm": "^9.0.1",
     "@types/uuid": "^9.0.1",
+    "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "bull": "^4.10.4",
     "cache-manager": "^5.2.1",
