@@ -1,9 +1,17 @@
+import { Injectable } from '@nestjs/common';
 import { Response } from 'express';
-import { Service } from 'nestgram';
-import { OnCommand, Controller } from 'nestgram';
-@Service()
+import { TelegramService } from 'nestjs-telegram';
+@Injectable()
 export class TelegramBotService {
-  async createMessage(message: string, res: Response) {}
+  constructor(private readonly telegramService: TelegramService) {}
+  async createMessage(message: string, res?: Response) {
+    await this.telegramService
+      .sendMessage({
+        chat_id: process.env.TELEGRAM_KEYGROUP_TEST,
+        text: message,
+      })
+      .toPromise();
+  }
 
   async joinGroup() {}
 }

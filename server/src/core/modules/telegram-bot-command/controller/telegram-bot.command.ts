@@ -9,4 +9,8 @@ export class TelegramBotController {
   start() {
     return this.telegramBotCommandService.start();
   }
+  @OnCommand('acounts_today')
+  async getAcountToday() {
+    return await this.telegramBotCommandService.getAcountToday();
+  }
 }

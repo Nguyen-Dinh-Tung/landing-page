@@ -21,3 +21,6 @@ export const messageUpdateEntities = (entity: ENITIES_ENUM) => {
 export const messageGetDetailEntities = (entity: ENITIES_ENUM) => {
   return `Get ${entity} successfully`;
 };
+export const messageTelegramBotCreateNewAcount = (username: string) => {
+  return `New user ${username}`;
+};

@@ -10,6 +10,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtStrategy } from 'src/core/jwt/jwt.strategy';
 import { WinstonModule } from 'src/core/winston/winston.module';
 import { TelegramModule, TelegramService } from 'nestjs-telegram';
+import { TelegramBotModule } from 'src/core/modules/telegram-bot/telegram-bot.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { TelegramModule, TelegramService } from 'nestjs-telegram';
     }),
     CacheModule.register({}),
     WinstonModule,
+    TelegramBotModule,
   ],
   controllers: [AuthController],
   providers: [AuthService, AcountsService, LocalStrategy, JwtStrategy],
