@@ -1,6 +1,6 @@
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { Module, OnModuleInit } from '@nestjs/common';
+import { Get, Module, OnModuleInit } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './core/databases/database.module';
@@ -14,8 +14,6 @@ import { WinstonService } from './core/winston/winston.service';
 import { MorganModule } from './core/morgan/morgan.module';
 import { WinstonModule } from './core/winston/winston.module';
 import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.module';
-import { JobsModule } from './jobs/jobs.module';
-import { TelegramBotCommandModule } from './core/modules/telegram-bot-command/telegram-bot-command.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -36,7 +34,6 @@ import { TelegramBotCommandModule } from './core/modules/telegram-bot-command/te
     MorganModule,
     WinstonModule.register('admin'),
     TelegramBotModule,
-    JobsModule,
   ],
   controllers: [AppController],
   providers: [

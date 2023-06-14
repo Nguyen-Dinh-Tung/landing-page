@@ -11,7 +11,7 @@ import { TelegramBotModule } from 'src/core/modules/telegram-bot/telegram-bot.mo
 @Module({
   imports: [
     TypeOrmModule.forFeature([AcountsEntity]),
-    CacheModule.register({}),
+    // CacheModule.register({}),
     MulterModule.register({
       dest: './data/images',
     }),

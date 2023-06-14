@@ -27,7 +27,7 @@ import { TelegramBotModule } from 'src/core/modules/telegram-bot/telegram-bot.mo
       },
       inject: [ConfigService],
     }),
-    CacheModule.register({}),
+    // CacheModule.register({}),
     WinstonModule,
     TelegramBotModule,
   ],

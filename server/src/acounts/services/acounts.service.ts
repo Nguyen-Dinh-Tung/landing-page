@@ -36,61 +36,61 @@ export class AcountsService {
   private readonly acountRepo: Repository<AcountsEntity>;
   constructor(
     private readonly dataSource: DataSource,
-    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
+    // @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
     private readonly telegramBotService: TelegramBotService,
   ) {
     this.acountRepo = this.dataSource.getRepository(AcountsEntity);
   }
 
   async findALl(res: Response, queryDto: QueryDtoBase) {
-    const cache = await this.cacheManager.get(process.env.CACHE_USERS_KEY);
-    if (!cache) {
-      await this.cacheManager.del(process.env.CACHE);
-      const querySyntax = this.acountRepo
-        .createQueryBuilder('acounts')
-        .where('acounts.isDelete =:isDelete', { isDelete: false })
-        .take(queryDto.take)
-        .skip(queryDto.skip);
-      if (queryDto.keySearch) {
-        querySyntax.andWhere('acounts.fullname like :keySearch');
-        querySyntax.andWhere('acounts.email like :keySearch', {
-          keySearch: queryDto.keySearch,
-        });
-        querySyntax.andWhere('acounts.phone like :keySearch', {
-          keySearch: queryDto.keySearch,
-        });
-        querySyntax.andWhere('acounts.username like :keySearch', {
-          keySearch: queryDto.keySearch,
-        });
-      }
-      if (queryDto.isActive !== undefined)
-        querySyntax.andWhere('acounts.isActive =:isActive', {
-          isActive: queryDto.isActive,
-        });
-      const [data, total] = await querySyntax.getManyAndCount();
-      const meta = new Meta({
-        page: queryDto.page,
-        take: queryDto.take,
-        total: total,
+    // const cache = await this.cacheManager.get(process.env.CACHE_USERS_KEY);
+    // if (!cache) {
+    // await this.cacheManager.del(process.env.CACHE);
+    const querySyntax = this.acountRepo
+      .createQueryBuilder('acounts')
+      .where('acounts.isDelete =:isDelete', { isDelete: false })
+      .take(queryDto.take)
+      .skip(queryDto.skip);
+    if (queryDto.keySearch) {
+      querySyntax.andWhere('acounts.fullname like :keySearch');
+      querySyntax.andWhere('acounts.email like :keySearch', {
+        keySearch: queryDto.keySearch,
       });
-      const lastData = { docs: data, meta };
-      AppRes(
-        messageTaketEntities(ENITIES_ENUM.ACOUNT),
-        HttpStatus.OK,
-        res,
-        lastData,
-      );
-      return await this.cacheManager.set(
-        process.env.CACHE_USERS_KEY,
-        JSON.stringify(lastData),
-        1000,
-      );
+      querySyntax.andWhere('acounts.phone like :keySearch', {
+        keySearch: queryDto.keySearch,
+      });
+      querySyntax.andWhere('acounts.username like :keySearch', {
+        keySearch: queryDto.keySearch,
+      });
     }
+    if (queryDto.isActive !== undefined)
+      querySyntax.andWhere('acounts.isActive =:isActive', {
+        isActive: queryDto.isActive,
+      });
+    const [data, total] = await querySyntax.getManyAndCount();
+    const meta = new Meta({
+      page: queryDto.page,
+      take: queryDto.take,
+      total: total,
+    });
+    const lastData = { docs: data, meta };
     AppRes(
       messageTaketEntities(ENITIES_ENUM.ACOUNT),
       HttpStatus.OK,
       res,
-      JSON.parse(await this.cacheManager.get(process.env.CACHE_MANAGER)),
+      lastData,
+    );
+    // return await this.cacheManager.set(
+    //   process.env.CACHE_USERS_KEY,
+    //   JSON.stringify(lastData),
+    //   1000,
+    // );
+    // }
+    AppRes(
+      messageTaketEntities(ENITIES_ENUM.ACOUNT),
+      HttpStatus.OK,
+      res,
+      // JSON.parse(await this.cacheManager.get(process.env.CACHE_MANAGER)),
     );
   }
   async createAcount(
