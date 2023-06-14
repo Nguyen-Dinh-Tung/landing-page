@@ -8,6 +8,6 @@ export class TelegramBotController {
   constructor(private readonly telegramBotService: TelegramBotService) {}
   @Post()
   async createMessage(@Body() data: CreateMessageGroup, @Res() res: Response) {
-    return await this.telegramBotService.createMessage(data.message, res);
+    return await this.telegramBotService.createMessage(data.message, '', res);
   }
 }
