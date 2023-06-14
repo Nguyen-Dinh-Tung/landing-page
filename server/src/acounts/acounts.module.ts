@@ -16,6 +16,7 @@ import { TelegramBotModule } from 'src/core/modules/telegram-bot/telegram-bot.mo
       dest: './data/images',
     }),
     WinstonModule,
+    TelegramBotModule,
   ],
   controllers: [AcountsController],
   providers: [AcountsService],

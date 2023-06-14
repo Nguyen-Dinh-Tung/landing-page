@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post, Res } from '@nestjs/common';
-import { TelegramBotService } from '../services/telegram-bot.service';
-import { CreateMessageGroup } from '../../dto/create-message-group.dto';
+import { TelegramBotService } from '../serivces/services/telegram-bot.service';
+import { CreateMessageGroup } from '../dto/create-message-group.dto';
 import { Response } from 'express';
 
 @Controller('telegram-bot')

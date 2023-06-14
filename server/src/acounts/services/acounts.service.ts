@@ -16,6 +16,7 @@ import {
   messageInsertEntities,
   messageNotFoundEntities,
   messageTaketEntities,
+  messageTelegramBotCreateNewAcount,
   messageUpdateEntities,
 } from 'src/common/contants/message';
 import { CreateAcountDto } from '../dto/create-acount.dto';
@@ -28,6 +29,7 @@ import { DeleteParamDto } from '../../core/dto/delete-param.dto';
 import * as fs from 'fs';
 import { UpdateAcountDto } from '../dto/update-acount.dto';
 import { FieldUnique } from 'src/core/dto/field-unique.dto';
+import { TelegramBotService } from 'src/core/modules/telegram-bot/serivces/services/telegram-bot.service';
 
 @Injectable()
 export class AcountsService {
@@ -35,6 +37,7 @@ export class AcountsService {
   constructor(
     private readonly dataSource: DataSource,
     @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
+    private readonly telegramBotService: TelegramBotService,
   ) {
     this.acountRepo = this.dataSource.getRepository(AcountsEntity);
   }
@@ -83,7 +86,7 @@ export class AcountsService {
         1000,
       );
     }
-    return AppRes(
+    AppRes(
       messageTaketEntities(ENITIES_ENUM.ACOUNT),
       HttpStatus.OK,
       res,
@@ -104,11 +107,11 @@ export class AcountsService {
         { phone: data.phone },
       ],
     });
-    // if (checkAcount) {
-    //   files && files['bg'] ? fs.unlinkSync(files['bg'][0].path) : '';
-    //   files && files['avt'] ? fs.unlinkSync(files['avt'][0].path) : '';
-    //   throw new BadRequestException(EXIST_ERR(ENITIES_ENUM.ACOUNT));
-    // }
+    if (checkAcount) {
+      files && files['bg'] ? fs.unlinkSync(files['bg'][0].path) : '';
+      files && files['avt'] ? fs.unlinkSync(files['avt'][0].path) : '';
+      throw new BadRequestException(EXIST_ERR(ENITIES_ENUM.ACOUNT));
+    }
     data.background = transformImage(files['bg']);
     data.avatar = transformImage(files['avt']);
     delete data.bg;
@@ -117,11 +120,14 @@ export class AcountsService {
     newAcount.create_by = acount;
     newAcount.create_at = new Date();
     if (newAcount) await this.acountRepo.insert(newAcount);
-    return AppRes(
+    AppRes(
       messageInsertEntities(ENITIES_ENUM.ACOUNT),
       HttpStatus.CREATED,
       res,
       newAcount,
+    );
+    return this.telegramBotService.createMessage(
+      messageTelegramBotCreateNewAcount(newAcount.username),
     );
   }
   async delete(param: DeleteParamDto, res: Response) {
@@ -211,5 +217,8 @@ export class AcountsService {
     return await this.acountRepo.findOne({
       where: data,
     });
+  }
+  async getAcountsToday() {
+    return await this.acountRepo.find({});
   }
 }
