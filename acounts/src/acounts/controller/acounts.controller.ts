@@ -30,10 +30,6 @@ import { AcountsEntity } from '../entities/acounts.entity';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { DeleteParamDto } from '../../core/dto/delete-param.dto';
 import { UpdateAcountDto } from '../dto/update-acount.dto';
-import { Public } from 'src/core/decorator/public.decorator';
-import { AppRoles } from 'src/core/guards/roles.guard';
-import { ACTION_ENUM } from 'src/core/enums/role.enum';
-import { RequestInterceptor } from 'src/core/winston/interceptor/request.interceptor';
 @ApiTags('acounts')
 @ApiBearerAuth()
 @Controller('acounts')

@@ -24,7 +24,6 @@ async function bootstrap() {
     .setDescription('The landing page api')
     .setVersion('1.0')
     .build();
-  // app.useGlobalInterceptors(new RequestInterceptor(app.get(WinstonService)));
   const document = SwaggerModule.createDocument(app, config);
   app.useGlobalFilters(new FilterErrorException(app.get(TelegramBotService)));
   SwaggerModule.setup('open', app, document);
