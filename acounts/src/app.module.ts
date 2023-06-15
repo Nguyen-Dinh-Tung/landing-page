@@ -14,6 +14,7 @@ import { WinstonService } from './core/winston/winston.service';
 import { MorganModule } from './core/morgan/morgan.module';
 import { WinstonModule } from './core/winston/winston.module';
 import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.module';
+import { SubcriberModule } from './core/modules/subcriber/subcriber.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -34,6 +35,7 @@ import { TelegramBotModule } from './core/modules/telegram-bot/telegram-bot.modu
     MorganModule,
     WinstonModule.register('admin'),
     TelegramBotModule,
+    SubcriberModule,
   ],
   controllers: [AppController],
   providers: [

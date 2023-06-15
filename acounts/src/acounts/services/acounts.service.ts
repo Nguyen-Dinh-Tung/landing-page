@@ -99,7 +99,6 @@ export class AcountsService {
     acount?: AcountsEntity,
     files?: Array<Express.Multer.File>,
   ) {
-    console.log(data, 'data');
     const checkAcount = await this.acountRepo.findOne({
       where: [
         { username: data.username },
